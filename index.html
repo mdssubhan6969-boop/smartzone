@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -68,22 +68,17 @@
     </header>
 
     <main id="main-content">
-        <!-- Hero Section with Unsplash Background -->
-        <section class="hero" id="home" style="background-image: linear-gradient(135deg, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.5) 100%), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80');">
-            <div class="container hero-grid">
-                <div class="hero-content reveal">
-                    <span class="hero-label">HIGH-END INTERIOR ARCHITECTURE</span>
-                    <h1 class="hero-title">
-                        shaping <span class="font-cursive">timeless</span> <br>
-                        spatial narratives.
-                    </h1>
-                    <p class="hero-subtitle">
-                        Translating architectural complexity into tactile, light-filled sanctuaries. We coordinate custom design execution and turnkey structural fitouts for luxury residential and retail estates globally.
-                    </p>
-                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <a class="btn btn-primary" href="consultation.html">Book A Commission</a>
-                        <a class="btn btn-outline" href="gallery.html">View Selected Works</a>
-                    </div>
+        <!-- Hero Section with Video Background -->
+        <section class="hero" id="home">
+            <video autoplay muted loop playsinline class="hero-video-bg">
+                <source src="assets/hero_page_video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="hero-tagline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
+                <h2 class="section-title" style="font-size: 3rem; margin-bottom: 0; color: var(--color-primary-light);">Imagining Your Future,<br>Creating Your Lifestyle</h2>
+            </div>
+        </section>
+
                 </div>
             </div>
         </section>
