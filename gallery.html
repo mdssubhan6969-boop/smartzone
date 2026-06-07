@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,71 +69,67 @@
 
     <main id="main-content">
         <!-- Title Block -->
-        <section class="about-section" style="padding: 100px 0 50px 0;">
+        <section class="about-section" style="padding: 80px 0 40px 0;">
             <div class="container text-center">
-                <span class="section-subtitle">THE GALLERY</span>
-                <h1 style="font-size: 3.8rem; line-height: 1.15; margin-bottom: 24px; font-weight: 300;">
-                    selected <span class="font-cursive">architectural</span> works.
+                <span class="section-subtitle">ATELIER WORKS</span>
+                <h1 style="font-size: 3.8rem; line-height: 1.15; margin-bottom: 20px; font-weight: 300;">
+                    curated <span class="font-cursive">portfolio</span> showcase.
                 </h1>
-                <p class="section-desc max-width-800" style="margin-top: 20px;">
-                    A study in minimalist concrete arches, travertine fixtures, oak partitions, and warm natural light.
+                <p class="section-desc max-width-800" style="margin-top: 15px;">
+                    Explore our design signatures across premium spaces. Toggle through our types of work below.
                 </p>
             </div>
         </section>
 
-        <!-- Portfolio Gallery Grid Section -->
-        <section class="gallery-section bg-alt" style="padding: 100px 0;">
+        <!-- Project Showcase Section -->
+        <section class="showcase-container bg-alt">
             <div class="container">
-                <div class="gallery-grid">
-                    
-                    <!-- Item 1: Lounge -->
-                    <div class="gallery-card size-large">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Curved Travertine Lounge">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <span class="gallery-cat">Living Space</span>
-                                <h4>The Concrete & Travertine Sanctuary</h4>
-                                <p>A layout expressing sensory balance, featuring brutalist arches, stone surfaces, and organic rust seating.</p>
+                <!-- Navigation Tabs -->
+                <div class="showcase-tabs" id="showcase-tabs">
+                    <!-- Dynamic tabs will be inserted here -->
+                </div>
+
+                <!-- Showcase Grid -->
+                <div class="showcase-split">
+                    <!-- Left: Interactive Slider -->
+                    <div class="showcase-slider">
+                        <div class="slider-viewport" id="slider-viewport">
+                            <!-- Slides will be dynamically injected here -->
+                        </div>
+                        <div class="slider-navigation">
+                            <span class="slider-counter" id="slider-counter">01 / 04</span>
+                            <div class="slider-arrows">
+                                <button class="slider-arrow" id="btn-prev" aria-label="Previous image" style="background: none;">&larr;</button>
+                                <button class="slider-arrow" id="btn-next" aria-label="Next image" style="background: none;">&rarr;</button>
                             </div>
+                        </div>
+                        <!-- Thumbnail Track -->
+                        <div class="slider-thumbnails" id="slider-thumbnails">
+                            <!-- Thumbnails will be dynamically injected here -->
                         </div>
                     </div>
 
-                    <!-- Item 2: Bathroom -->
-                    <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80" alt="Marble Bathroom Suite">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <span class="gallery-cat">Bath Suite</span>
-                                <h4>The Calacatta Marble Hearth</h4>
-                                <p>Premium bookmatched marble walls paired with bespoke brushed copper details.</p>
+                    <!-- Right: Project Specifications Panel -->
+                    <div class="details-panel" id="details-panel">
+                        <span class="details-tag" id="details-tag">RESIDENTIAL CURATION</span>
+                        <h2 class="details-title" id="details-title">The Oak & Travertine Lounge</h2>
+                        <p class="details-desc" id="details-desc">
+                            A spacious residential sanctuary focusing on material permanence and symmetry. Smooth concrete arches divide the layout, while monolithic travertine tables, raw brushed wood cabinets, and warm linen seating create a balanced sensory experience.
+                        </p>
+                        <div class="details-spec-table">
+                            <div class="spec-row">
+                                <span class="spec-label">Materials</span>
+                                <span class="spec-value" id="spec-materials">Monolithic Travertine, Brushed White Oak, Natural Bleached Linen</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Zoning / Specs</span>
+                                <span class="spec-value" id="spec-details">Dubai Marina, UAE | 3,200 sq.ft | Completed: 2026</span>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Item 3: Kitchen -->
-                    <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80" alt="Walnut and Travertine Kitchen">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <span class="gallery-cat">Culinary Studio</span>
-                                <h4>The Travertine Culinary Hearth</h4>
-                                <p>Custom fluted dark walnut cabinetry surrounding a monolithic travertine stone island.</p>
-                            </div>
+                        <div style="margin-top: 10px;">
+                            <a class="btn btn-primary btn-full" id="inquiry-btn" href="consultation.html">Request This Spatial Style</a>
                         </div>
                     </div>
-
-                    <!-- Item 4: Walk-in Closet -->
-                    <div class="gallery-card size-wide">
-                        <img src="https://images.unsplash.com/photo-1558882224-cca16673336d?auto=format&fit=crop&w=1200&q=80" alt="Oak Dressing Wardrobe">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <span class="gallery-cat">Dressing Suite</span>
-                                <h4>The White Oak Dressing Atelier</h4>
-                                <p>Symmetrical oak cabinetry integrated with warm recessed LED lighting and glass partitions.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -187,9 +183,215 @@
         </div>
     </footer>
 
-    <!-- Custom Logic JS -->
+     <!-- Custom Logic JS -->
     <script src="main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Project database
+        const projects = [
+            {
+                id: 0,
+                category: "PHASE 02 / RESIDENTIAL CURATION",
+                title: "The Oak & Travertine Lounge",
+                desc: "A spacious residential sanctuary focusing on material permanence and symmetry. Smooth concrete arches divide the layout, while monolithic travertine tables, raw brushed wood cabinets, and warm linen seating create a balanced sensory experience.",
+                materials: "Monolithic Travertine, Brushed White Oak, Natural Bleached Linen",
+                details: "Dubai Marina, UAE | 3,200 sq.ft | Completed: 2026",
+                images: [
+                    "assets/gallery/work_1.jpg",
+                    "assets/gallery/work_2.jpg",
+                    "assets/gallery/work_3.jpg",
+                    "assets/gallery/work_4.jpg"
+                ]
+            },
+            {
+                id: 1,
+                category: "PHASE 02 / BATH SUITE CURATION",
+                title: "The Calacatta Bath Sanctuary",
+                desc: "An oasis of rejuvenation composed of bookmatched Italian Calacatta marble wall cladding. The floorplan is optimized around a monolithic freestanding stone tub, highlighted by custom raw-brushed copper fittings and soft recessed cove lights.",
+                materials: "Calacatta Marble, Brushed Copper, Fluted Glass",
+                details: "Palm Jumeirah, UAE | 650 sq.ft | Completed: 2026",
+                images: [
+                    "assets/gallery/work_5.jpg",
+                    "assets/gallery/work_6.jpg",
+                    "assets/gallery/work_7.jpg",
+                    "assets/gallery/work_8.jpg"
+                ]
+            },
+            {
+                id: 2,
+                category: "PHASE 02 / CULINARY STUDIO",
+                title: "The Monolithic Walnut Kitchen",
+                desc: "A professional-grade home culinary studio featuring dark fluted American walnut cabinetry. The central island is carved from a single block of premium Silver Travertine stone, integrating state-of-the-art concealed appliances.",
+                materials: "Silver Travertine, Fluted American Walnut, Matte Black Steel",
+                details: "Emirates Hills, UAE | 1,100 sq.ft | Completed: 2026",
+                images: [
+                    "assets/gallery/work_9.jpg",
+                    "assets/gallery/work_10.jpg",
+                    "assets/gallery/work_11.jpg",
+                    "assets/gallery/work_12.jpg"
+                ]
+            },
+            {
+                id: 3,
+                category: "PHASE 02 / DRESSING SUITE",
+                title: "The White Oak Dressing Suite",
+                desc: "A highly organized dressing wardrobe designed with symmetrical custom cabinet units. Brushed brass fittings, custom white oak drawer panels, integrated wardrobe LED strips, and glass showcases create a boutique-like environment.",
+                materials: "Natural White Oak, Satin Brass, Tempered Bronze Glass",
+                details: "Downtown Dubai, UAE | 820 sq.ft | Completed: 2026",
+                images: [
+                    "assets/gallery/work_13.jpg",
+                    "assets/gallery/work_14.jpg",
+                    "assets/gallery/work_15.jpg",
+                    "assets/gallery/work_16.jpg"
+                ]
+            },
+            {
+                id: 4,
+                category: "PHASE 02 / RESIDENTIAL CURATION",
+                title: "The Brutalist Penthouse",
+                desc: "A study in raw materials and structural honesty. The penthouse features microcement wall finishes, floating cantilevered travertine stair treads, oversized minimalist black-framed windows, and selected organic custom furniture pieces.",
+                materials: "Polished Microcement, Raw Travertine, Matte Black Powder Steel",
+                details: "JBR, Dubai, UAE | 4,500 sq.ft | Completed: 2026",
+                images: [
+                    "assets/gallery/work_17.jpg",
+                    "assets/gallery/work_18.jpg",
+                    "assets/gallery/work_19.jpg",
+                    "assets/gallery/work_20.jpg"
+                ]
+            },
+            {
+                id: 5,
+                category: "PHASE 03 / COMMERCIAL FITOUT",
+                title: "The Atelier Boutique Office",
+                desc: "A curved partition corporate environment that balances privacy and productivity. Composed of sound-dampening ribbed wooden panels, bespoke leather meeting tables, architectural track lighting, and a soft minimalist lounge area.",
+                materials: "Ribbed Oak Panels, Full-Grain Cognac Leather, Anodized Aluminum",
+                details: "DIFC, Dubai, UAE | 2,800 sq.ft | Completed: 2026",
+                images: [
+                    "assets/gallery/work_21.jpg",
+                    "assets/gallery/work_22.jpg",
+                    "assets/gallery/work_23.jpg",
+                    "assets/gallery/work_24.jpg"
+                ]
+            }
+        ];
+
+        let currentProjectIndex = 0;
+        let currentSlideIndex = 0;
+
+        // DOM Elements
+        const tabsContainer = document.getElementById('showcase-tabs');
+        const viewport = document.getElementById('slider-viewport');
+        const thumbnailsContainer = document.getElementById('slider-thumbnails');
+        const counter = document.getElementById('slider-counter');
+        
+        const detailsTag = document.getElementById('details-tag');
+        const detailsTitle = document.getElementById('details-title');
+        const detailsDesc = document.getElementById('details-desc');
+        const specMaterials = document.getElementById('spec-materials');
+        const specDetails = document.getElementById('spec-details');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const btnInquiry = document.getElementById('inquiry-btn');
+
+        // Build Tabs
+        const renderTabs = () => {
+            tabsContainer.innerHTML = '';
+            projects.forEach((proj, idx) => {
+                const tab = document.createElement('div');
+                tab.className = `showcase-tab ${idx === currentProjectIndex ? 'active' : ''}`;
+                const shortName = proj.title.replace('The ', '').replace(' Sanctuary', '').replace(' Suite', '').replace(' Office', '').replace(' Penthouse', '').replace(' Kitchen', '').replace(' Lounge', '');
+                tab.innerHTML = `<span style="font-family: var(--font-body); font-weight: 300; margin-right: 4px; font-size: 0.7rem;">0${idx + 1}.</span>${shortName}`;
+                tab.addEventListener('click', () => switchProject(idx));
+                tabsContainer.appendChild(tab);
+            });
+        };
+
+        // Load active project
+        const loadProject = () => {
+            const proj = projects[currentProjectIndex];
+            currentSlideIndex = 0;
+
+            // Render Details
+            detailsTag.textContent = proj.category;
+            detailsTitle.textContent = proj.title;
+            detailsDesc.textContent = proj.desc;
+            specMaterials.textContent = proj.materials;
+            specDetails.textContent = proj.details;
+            btnInquiry.href = `consultation.html?project=${encodeURIComponent(proj.title)}`;
+
+            // Render Slides
+            viewport.innerHTML = '';
+            proj.images.forEach((imgSrc, idx) => {
+                const slide = document.createElement('div');
+                slide.className = `slider-slide ${idx === 0 ? 'active' : ''}`;
+                slide.innerHTML = `<img src="${imgSrc}" alt="${proj.title} - Slide ${idx + 1}">`;
+                viewport.appendChild(slide);
+            });
+
+            // Render Thumbnails
+            thumbnailsContainer.innerHTML = '';
+            proj.images.forEach((imgSrc, idx) => {
+                const thumb = document.createElement('div');
+                thumb.className = `slider-thumb ${idx === 0 ? 'active' : ''}`;
+                thumb.innerHTML = `<img src="${imgSrc}" alt="${proj.title} - Thumb ${idx + 1}">`;
+                thumb.addEventListener('click', () => setSlide(idx));
+                thumbnailsContainer.appendChild(thumb);
+            });
+
+            updateCounter();
+        };
+
+        const updateCounter = () => {
+            counter.textContent = `0${currentSlideIndex + 1} / 04`;
+        };
+
+        const setSlide = (idx) => {
+            currentSlideIndex = idx;
+            const slides = viewport.querySelectorAll('.slider-slide');
+            const thumbs = thumbnailsContainer.querySelectorAll('.slider-thumb');
+
+            slides.forEach((slide, sIdx) => {
+                if (sIdx === idx) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            thumbs.forEach((thumb, tIdx) => {
+                if (tIdx === idx) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+
+            updateCounter();
+        };
+
+        const switchProject = (idx) => {
+            currentProjectIndex = idx;
+            renderTabs();
+            loadProject();
+        };
+
+        // Event Listeners
+        btnPrev.addEventListener('click', () => {
+            let nextIdx = currentSlideIndex - 1;
+            if (nextIdx < 0) nextIdx = 3;
+            setSlide(nextIdx);
+        });
+
+        btnNext.addEventListener('click', () => {
+            let nextIdx = currentSlideIndex + 1;
+            if (nextIdx > 3) nextIdx = 0;
+            setSlide(nextIdx);
+        });
+
+        // Initialize
+        renderTabs();
+        loadProject();
+    });
+    </script>
 </body>
 </html>
-
-

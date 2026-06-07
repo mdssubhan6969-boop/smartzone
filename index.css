@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+@keyframes char-scale {
+  0% {
+    scale: 1 0.1;
+  }
+  50% {
+    scale: 1 var(--max-scale);
+  }
+  100% {
+    scale: 1 0.1;
+  }
+}
