@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Digital Services | SKIDS MEDIA UAE</title>
+    <link rel="icon" type="image/jpeg" href="download.jpg">
+    <meta name="description" content="Power your digital scaling with SKIDS MEDIA's expert support: Premium SEO, Ultra-Fast Secure Web Hosting, Google Ads, native Content Ads, and expert TikTok & Instagram budget management in the Gulf.">
+    <meta name="keywords" content="website near me, website designing, apps, social media marketing, premium SEO UAE, secure web hosting Dubai, Google Ads expert Gulf, TikTok budget management Ajman, native advertising Middle East">
+    <link rel="canonical" href="https://skids.media/other-services.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-page {
+            padding: 150px 0;
+            min-height: 100vh;
+        }
+        .services-hero {
+            text-align: center;
+            margin-bottom: 8rem;
+        }
+        .services-hero h1 {
+            font-size: clamp(3rem, 10vw, 8rem);
+            font-family: 'Bricolage Grotesque', sans-serif;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+        }
+        .other-services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .back-home {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 2000;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.05);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        .back-home:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <a href="index.html" class="back-home">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        BACK TO SKIDS
+    </a>
+
+    <main class="services-page container">
+        <header class="services-hero">
+            <h1 data-i18n="other_services_hero">Extended Services</h1>
+            <p data-i18n="other_services_sub">Deep specialized support for your digital growth.</p>
+        </header>
+
+        <div class="other-services-grid">
+            <!-- SEO -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">01</span>
+                <h3>Search Engine Optimization (SEO)</h3>
+                <p>Advanced on-page and off-page optimization to dominate search results.</p>
+            </div>
+            <!-- Web Hosting -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">02</span>
+                <h3>Web Hosting</h3>
+                <p>Ultra-fast, secure, and scalable hosting solutions for high-traffic sites.</p>
+            </div>
+            <!-- Domain Management -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">03</span>
+                <h3>Domain Management</h3>
+                <p>Full lifecycle management of your digital addresses and DNS health.</p>
+            </div>
+            <!-- Domain Registration -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">04</span>
+                <h3>Domain Registration</h3>
+                <p>Secure the perfect name for your brand with global registry access.</p>
+            </div>
+            <!-- Content Ads -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">05</span>
+                <h3>Content Ads</h3>
+                <p>Native advertising strategies that blend value with conversion.</p>
+            </div>
+            <!-- Google Ads -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">06</span>
+                <h3>Google Ads</h3>
+                <p>PPC management focused on high-intent keywords and maximum ROI.</p>
+            </div>
+            <!-- TikTok Budget Management -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">07</span>
+                <h3>TikTok Budget Management</h3>
+                <p>Optimizing daily spend for viral reach and targeted conversion.</p>
+            </div>
+            <!-- Instagram Budget Management -->
+            <div class="service-item fade-in-hidden">
+                <span class="service-num">08</span>
+                <h3>Instagram Budget Management</h3>
+                <p>Precision scaling of your ad spend across Feed, Stories, and Reels.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Trigger reveal animations on load for this page
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.service-item').forEach(el => {
+                el.classList.add('fade-in-visible');
+            });
+        });
+    </script>
+</body>
+</html>

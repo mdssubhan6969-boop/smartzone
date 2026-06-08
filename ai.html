@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIDS AI | Next-Gen AI Solutions UAE - Coming Soon</title>
+    <link rel="icon" type="image/jpeg" href="download.jpg">
+    <meta name="description" content="Next-gen artificial intelligence platforms custom tailored for Gulf-based businesses and SMM automation by SKIDS MEDIA. Redefining digital efficiency in Dubai and Ajman.">
+    <meta name="keywords" content="website near me, website designing, apps, social media marketing, AI platforms UAE, marketing automation Dubai, SMM AI tools Gulf, custom artificial intelligence Middle East">
+    <link rel="canonical" href="https://skids.media/ai.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ai-hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-huge {
+            font-size: clamp(4rem, 15vw, 10rem);
+            font-weight: 900;
+            letter-spacing: -5px;
+            background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .coming-soon {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            opacity: 0.8;
+        }
+
+        .ai-blob {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: var(--accent-color);
+            filter: blur(150px);
+            opacity: 0.1;
+            z-index: -1;
+            animation: pulse 10s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1) translate(-10%, -10%); }
+            to { transform: scale(1.2) translate(10%, 10%); }
+        }
+
+        .btn-back {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            z-index: 1000;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: #fff;
+            color: #000;
+            transform: translateX(-5px);
+        }
+    </style>
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <div id="transition-overlay"></div>
+
+    <a href="index.html" class="btn-back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        BACK TO HOME
+    </a>
+
+    <main class="ai-hero">
+        <div class="ai-blob"></div>
+        <h1 class="ai-huge">SKIDS AI</h1>
+        <p class="coming-soon">Coming soon!</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

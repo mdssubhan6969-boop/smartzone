@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Results & Portfolio | SKIDS MEDIA UAE</title>
+    <link rel="icon" type="image/jpeg" href="download.jpg">
+    <meta name="description" content="Browse case studies and digital results by SKIDS MEDIA. High-converting multilingual driving school portals, engaging board game apps, and viral social strategies in Dubai and Ajman.">
+    <meta name="keywords" content="website near me, website designing, apps, social media marketing, web design portfolio Dubai, web development case studies UAE, digital agency results Gulf, SMM case studies Ajman, SKIDS MEDIA portfolio">
+    <link rel="canonical" href="https://skids.media/portfolio.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-hero {
+            padding: 150px 0 100px;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(0, 112, 243, 0.1) 0%, transparent 70%);
+        }
+        
+        .minimal-sub {
+            color: #fff !important;
+            opacity: 0.8;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 150px;
+            padding-bottom: 150px;
+        }
+
+        .case-study {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .case-study {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .case-study:nth-child(even) .case-study-content {
+                order: 2;
+            }
+        }
+
+        .case-study-content h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+
+        .case-study-tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 3rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 16px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            opacity: 0.5;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .mockup-container {
+            position: relative;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .phone-mockup {
+            width: 280px;
+            height: 580px;
+            background: #000;
+            border: 10px solid #1a1a1a;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+        }
+
+        .phone-mockup:hover video {
+            transform: scale(1.05);
+        }
+
+        .phone-mockup video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .visit-site-btn {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: #fff;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .visit-site-btn:hover {
+            background: var(--accent-color);
+            color: #fff;
+            transform: translateX(-50%) translateY(-5px);
+        }
+
+        .web-mockup-preview {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            margin-top: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+        }
+        
+        .back-nav {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 100;
+        }
+
+        .btn-back {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            z-index: 1000;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: #fff;
+            color: #000;
+            transform: translateX(-5px);
+        }
+    </style>
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <div id="transition-overlay"></div>
+
+    <a href="index.html" class="btn-back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        BACK TO HOME
+    </a>
+
+    <main class="container">
+        <header class="portfolio-hero">
+            <h1 class="huge-heading">RESULTS</h1>
+            <p class="minimal-sub">Digital Excellence in Motion</p>
+        </header>
+
+        <div class="portfolio-grid">
+            <!-- Case Study 1: Driving School -->
+            <section class="case-study">
+                <div class="case-study-content">
+                    <div class="case-study-tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">Multilingual</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <h2>Sharjah Tamil Driving Instructors</h2>
+                    <p>A professional, multilingual landing page for Sharjah's leading driving school. We highlighted a 20-year legacy with support for 8+ languages to drive massive student enrollment and search visibility.</p>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-value">+150%</span>
+                            <span class="metric-label">Student Inquiries</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">92%</span>
+                            <span class="metric-label">Success Rate</span>
+                        </div>
+                    </div>
+
+                    <div class="web-mockup-preview" style="background-image: url('https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=2000');"></div>
+                </div>
+                <div class="mockup-container">
+                    <div class="phone-mockup">
+                        <video autoplay muted loop playsinline>
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-car-driving-on-a-road-1188-large.mp4" type="video/mp4">
+                        </video>
+                        <a href="https://sharjahtamildrivinginstructor.com" target="_blank" class="visit-site-btn">Visit Site</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Case Study 2: Board Game Cafe -->
+            <section class="case-study">
+                <div class="mockup-container">
+                    <div class="phone-mockup">
+                        <video autoplay muted loop playsinline>
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-friends-playing-a-board-game-at-home-42436-large.mp4" type="video/mp4">
+                        </video>
+                        <a href="https://dnaboardgames.lovable.app" target="_blank" class="visit-site-btn">Visit Site</a>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <div class="case-study-tags">
+                        <span class="tag">Gaming</span>
+                        <span class="tag">Hospitality</span>
+                        <span class="tag">Social</span>
+                    </div>
+                    <h2>DNA Board Games Restaurant</h2>
+                    <p>Building an immersive digital home for Abu Dhabi's premier board game cafe. Our strategy focused on community engagement and seamless booking systems for gamers and diners alike.</p>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-value">+200%</span>
+                            <span class="metric-label">Weekend Bookings</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">4.9/5</span>
+                            <span class="metric-label">User Rating</span>
+                        </div>
+                    </div>
+
+                    <div class="web-mockup-preview" style="background-image: url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&q=80&w=2000');"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 SKIDS MEDIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.case-study').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(50px)';
+                el.style.transition = 'all 1s cubic-bezier(0.16, 1, 0.3, 1)';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
