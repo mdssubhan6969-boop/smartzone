@@ -1,0 +1,459 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Privacy Policy - smartzone interior</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Playfair+Display:400,600,700,800&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dymI4dRB3+r4SgS3xSx3GJpPpZ+W0iPzbBrUy1Z2W1zEA+Gmu1tFJAiP7EJPwxwXnNUlFMVzK2LuP5NFSdf/fg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<style>
+		:root {
+			--accent-blue: #0A84FF;
+			--accent-blue-hover: #0066FF;
+			--accent-blue-light: rgba(10, 132, 255, 0.06);
+			--text-dark: #0F172A;
+			--text-medium: #334155;
+			--text-light: #64748B;
+			--bg-page: #F8FAFC;
+			--bg-document: #FFFFFF;
+			--border-color: #E2E8F0;
+			--font-main: 'Inter', sans-serif;
+			--font-display: 'Playfair Display', serif;
+			--transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: var(--bg-page);
+			color: var(--text-medium);
+			font-family: var(--font-main);
+			line-height: 1.7;
+			padding-bottom: 80px;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		/* Document Actions Top Bar */
+		.doc-toolbar {
+			position: sticky;
+			top: 0;
+			background-color: rgba(255, 255, 255, 0.85);
+			backdrop-filter: blur(20px);
+			border-bottom: 1px solid var(--border-color);
+			z-index: 100;
+			padding: 15px 30px;
+			box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.03);
+		}
+
+		.toolbar-content {
+			max-width: 900px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.toolbar-logo img {
+			max-height: 45px;
+			object-fit: contain;
+		}
+
+		.toolbar-buttons {
+			display: flex;
+			gap: 12px;
+		}
+
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 8px 18px;
+			font-size: 0.9rem;
+			font-weight: 600;
+			border-radius: 8px;
+			text-decoration: none;
+			transition: var(--transition);
+			cursor: pointer;
+		}
+
+		.btn-outline {
+			border: 1px solid var(--border-color);
+			background-color: transparent;
+			color: var(--text-medium);
+		}
+
+		.btn-outline:hover {
+			background-color: var(--bg-page);
+			border-color: var(--text-light);
+			color: var(--text-dark);
+		}
+
+		.btn-primary {
+			background-color: var(--accent-blue);
+			color: #FFFFFF;
+			border: none;
+		}
+
+		.btn-primary:hover {
+			background-color: var(--accent-blue-hover);
+			box-shadow: 0 4px 12px rgba(10, 132, 255, 0.2);
+		}
+
+		.btn i {
+			margin-right: 8px;
+			font-size: 0.85rem;
+		}
+
+		/* A4 PDF Sheet Layout */
+		.pdf-page-container {
+			max-width: 900px;
+			margin: 40px auto 0 auto;
+			padding: 0 20px;
+		}
+
+		.pdf-sheet {
+			background-color: var(--bg-document);
+			border: 1px solid var(--border-color);
+			border-radius: 16px;
+			box-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.08),
+						0 1px 3px rgba(0, 0, 0, 0.02);
+			padding: 60px 80px;
+			position: relative;
+		}
+
+		/* Document Header */
+		.doc-header {
+			border-bottom: 2px solid var(--text-dark);
+			padding-bottom: 30px;
+			margin-bottom: 40px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+
+		.doc-title-block h1 {
+			font-family: var(--font-display);
+			font-size: 2.2rem;
+			font-weight: 800;
+			color: var(--text-dark);
+			line-height: 1.2;
+			margin-bottom: 8px;
+		}
+
+		.doc-meta {
+			font-size: 0.82rem;
+			color: var(--text-light);
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+		}
+
+		.doc-stamp {
+			text-align: right;
+			font-size: 0.82rem;
+			color: var(--text-light);
+			border-left: 2px solid var(--border-color);
+			padding-left: 20px;
+		}
+
+		.doc-stamp p strong {
+			color: var(--text-dark);
+		}
+
+		/* Content Structure */
+		.doc-section {
+			margin-bottom: 35px;
+		}
+
+		.doc-section h2 {
+			font-family: var(--font-display);
+			font-size: 1.35rem;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin-bottom: 12px;
+			display: flex;
+			gap: 10px;
+		}
+
+		.doc-section h2 span.sec-num {
+			color: var(--accent-blue);
+		}
+
+		.doc-section p {
+			margin-bottom: 15px;
+			color: var(--text-medium);
+			text-align: justify;
+		}
+
+		.doc-section ul, .doc-section ol {
+			margin-left: 20px;
+			margin-bottom: 15px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		.doc-section li {
+			padding-left: 5px;
+		}
+
+		/* Embedded Themed Images */
+		.doc-image-container {
+			margin: 35px 0;
+			border-radius: 12px;
+			overflow: hidden;
+			border: 1px solid var(--border-color);
+			box-shadow: 0 8px 25px -10px rgba(0,0,0,0.05);
+			background-color: var(--bg-page);
+		}
+
+		.doc-image-container img {
+			width: 100%;
+			height: 380px;
+			object-fit: cover;
+			display: block;
+		}
+
+		.doc-image-caption {
+			padding: 12px 20px;
+			font-size: 0.85rem;
+			color: var(--text-light);
+			background-color: #FFFFFF;
+			border-top: 1px solid var(--border-color);
+			font-style: italic;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.doc-image-caption span.img-ref {
+			font-weight: 600;
+			font-style: normal;
+			color: var(--text-dark);
+		}
+
+		/* Page Break Simulation (Legal PDF feel) */
+		.page-break {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 45px 0;
+			position: relative;
+		}
+
+		.page-break::before {
+			content: '';
+			position: absolute;
+			left: -80px;
+			right: -80px;
+			height: 1px;
+			border-top: 1px dashed var(--border-color);
+			z-index: 1;
+		}
+
+		.page-break-badge {
+			background-color: var(--bg-page);
+			border: 1px solid var(--border-color);
+			color: var(--text-light);
+			padding: 4px 14px;
+			border-radius: 20px;
+			font-size: 0.72rem;
+			font-weight: 600;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			z-index: 2;
+			position: relative;
+		}
+
+		/* Document Footer */
+		.doc-footer {
+			margin-top: 50px;
+			border-top: 1px solid var(--border-color);
+			padding-top: 25px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 0.78rem;
+			color: var(--text-light);
+		}
+
+		.doc-footer .foot-branding {
+			font-weight: 600;
+			color: var(--text-dark);
+		}
+
+		/* Print Overrides */
+		@media print {
+			body {
+				background-color: #FFFFFF;
+				padding: 0;
+			}
+			.doc-toolbar, .doc-toolbar * {
+				display: none !important;
+			}
+			.pdf-page-container {
+				margin: 0;
+				padding: 0;
+				max-width: 100%;
+			}
+			.pdf-sheet {
+				border: none;
+				box-shadow: none;
+				padding: 0;
+				border-radius: 0;
+			}
+			.doc-image-container {
+				page-break-inside: avoid;
+			}
+			.page-break {
+				page-break-before: always;
+				margin: 0;
+				height: 0;
+			}
+			.page-break::before, .page-break-badge {
+				display: none;
+			}
+		}
+
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			.pdf-sheet {
+				padding: 40px 30px;
+			}
+			.doc-header {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 15px;
+			}
+			.doc-stamp {
+				text-align: left;
+				border-left: none;
+				border-top: 2px solid var(--border-color);
+				padding-left: 0;
+				padding-top: 15px;
+				width: 100%;
+			}
+			.doc-image-container img {
+				height: 250px;
+			}
+			.page-break::before {
+				left: -30px;
+				right: -30px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Toolbar -->
+	<div class="doc-toolbar">
+		<div class="toolbar-content">
+			<div class="toolbar-logo">
+				<img src="logo.png" alt="smartzone logo">
+			</div>
+			<div class="toolbar-buttons">
+				<a href="index.html" class="btn btn-outline"><i class="fas fa-home"></i> Back to Home</a>
+				<button onclick="window.print()" class="btn btn-primary"><i class="fas fa-print"></i> Download / Print PDF</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- PDF Sheet Container -->
+	<div class="pdf-page-container">
+		<div class="pdf-sheet">
+			
+			<!-- Header -->
+			<div class="doc-header">
+				<div class="doc-title-block">
+					<h1>Privacy Policy</h1>
+					<div class="doc-meta">Client Data Protection Policy</div>
+				</div>
+				<div class="doc-stamp">
+					<p>Document Ref: <strong>SZ-PPD-2026</strong></p>
+					<p>Effective Date: <strong>June 10, 2026</strong></p>
+					<p>Version: <strong>1.2 (Active)</strong></p>
+				</div>
+			</div>
+
+			<!-- Document Content -->
+			<div class="doc-body">
+				
+				<div class="doc-section">
+					<h2><span class="sec-num">1.</span> Commitment to Confidentiality</h2>
+					<p>At <strong>smartzone interior</strong>, we prioritize the confidentiality and safety of our Clients' personal information. This Privacy Policy details how we collect, process, and protect your data when you visit our website, complete consultation requests, or subscribe to our newsletter channels. We are committed to maintaining the highest ethical and design standards, both in physical environments and digital interactions.</p>
+				</div>
+
+				<div class="doc-section">
+					<h2><span class="sec-num">2.</span> Information We Collect</h2>
+					<p>We only collect personal information that is voluntarily provided by our Clients. This occurs through active input fields on our web platforms, including:</p>
+					<ul>
+						<li><strong>Consultation Requests:</strong> First Name, Last Name, Email Address, Phone Number, and descriptive project messages.</li>
+						<li><strong>Newsletter Subscriptions:</strong> Direct Email Addresses.</li>
+						<li><strong>Analytical Logs:</strong> Standard metadata such as browser type, referring pages, and session duration to improve web responsiveness.</li>
+					</ul>
+				</div>
+
+				<!-- Image 1 Embedded -->
+				<div class="doc-image-container">
+					<img src="images/privacy_secure_1.png" alt="High-end design studio frosted glass offices">
+					<div class="doc-image-caption">
+						<span>Confidential design consult spaces representing privacy and premium architectural boundaries.</span>
+						<span class="img-ref">Fig 2.1</span>
+					</div>
+				</div>
+
+				<div class="doc-section">
+					<h2><span class="sec-num">3.</span> How We Process Your Data</h2>
+					<p>We believe in data minimalization. Since this platform runs as a static landing page, we do not store your credentials in a persistent online database. Instead, your form submissions are processed dynamically on the client-side and immediately redirected to our secure WhatsApp channel or standard direct email routing. This prevents leakages and unauthorized access to your private information.</p>
+				</div>
+
+				<!-- Page Break Simulation -->
+				<div class="page-break">
+					<span class="page-break-badge">Page 2</span>
+				</div>
+
+				<div class="doc-section">
+					<h2><span class="sec-num">4.</span> Security and Safeguards</h2>
+					<p>We implement industry-standard security practices to protect your physical drawings, design files, and contact information. Our systems utilize SSL encryption for all web traffic, and physical blueprints are held securely inside our drafting archives, protected by physical access controls and designer security cabinets.</p>
+				</div>
+
+				<!-- Image 2 Embedded -->
+				<div class="doc-image-container">
+					<img src="images/privacy_secure_2.png" alt="Luxury minimal built-in safe cabinet">
+					<div class="doc-image-caption">
+						<span>Secure custom interior installations protecting valuable Client documents.</span>
+						<span class="img-ref">Fig 2.2</span>
+					</div>
+				</div>
+
+				<div class="doc-section">
+					<h2><span class="sec-num">5.</span> Compliance with UAE Data Laws</h2>
+					<p>In accordance with UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection, we ensure that Clients retain full rights over their personal data. You have the right to request a summary of the data we hold, request corrections to your contact info, or request complete deletion of your records from our mailing lists at any time by contacting our data officer.</p>
+				</div>
+
+				<div class="doc-section">
+					<h2><span class="sec-num">6.</span> Third-Party Disclosure &amp; Consent</h2>
+					<p>We do not sell, trade, rent, or otherwise disclose Client contact details to third-party advertising companies or contractors. Your details are solely used to coordinate fit-out execution, arrange scheduling, and provide relevant updates regarding your smartzone project. By utilizing our forms, you consent to this processing structure.</p>
+					<p>For inquiries, opt-outs, or updates, please contact us directly at: <strong>info@smartzoneuae.com</strong>.</p>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<div class="doc-footer">
+				<div>© 2010 - 2026 <span class="foot-branding">smartzone interior</span>. All rights reserved.</div>
+				<div>Document Ref: SZ-PPD-2026</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
+
+
