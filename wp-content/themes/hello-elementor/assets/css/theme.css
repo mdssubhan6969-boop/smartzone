@@ -262,126 +262,127 @@
 }
 
 /* ==========================================================================
-   GLASS BUTTON STYLE OVERRIDES (PREMIUM GLASS DESIGN)
+   FLIP BUTTON STYLE OVERRIDES (3D FLIP BUTTON DESIGN)
    ========================================================================== */
-.glass-button-wrap {
+.flip-button-wrap {
     position: relative !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     vertical-align: middle !important;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     cursor: pointer !important;
+    perspective: 1000px !important;
+    margin: 0 !important;
     padding: 0 !important;
     background: transparent !important;
     border: none !important;
 }
 
-.glass-button {
+.flip-button {
     all: unset !important;
     box-sizing: border-box !important;
     position: relative !important;
-    z-index: 2 !important;
+    display: inline-flex !important;
+    transform-style: preserve-3d !important;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Flipped state */
+.flip-button-wrap.flipped .flip-button {
+    transform: rotateX(180deg) !important;
+}
+
+/* Common face styles */
+.flip-button-front,
+.flip-button-back {
+    border-radius: 9999px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    border-radius: 9999px !important;
-    cursor: pointer !important;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    
-    /* Premium Glassmorphism */
-    background: rgba(255, 255, 255, 0.08) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    
-    /* Shadows */
-    box-shadow: 
-      inset 0 1px 1px rgba(255, 255, 255, 0.3),
-      inset 0 -1px 1px rgba(0, 0, 0, 0.2),
-      0 4px 12px rgba(0, 0, 0, 0.05) !important;
-}
-
-/* Dark mode adjustment if body or page is dark */
-.dark-theme .glass-button,
-body.elementor-bg-dark .glass-button,
-.bg-stone-900 .glass-button,
-.bg-slate-900 .glass-button {
-    background: rgba(13, 19, 33, 0.45) !important;
-    border-color: rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Button size options */
-.glass-button-text {
     font-size: 14.5px !important;
     font-weight: 600 !important;
     letter-spacing: -0.01em !important;
-    color: #FFFFFF !important; /* Elegant white/light text for dark context */
-    transition: color 0.3s ease !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    text-shadow: none !important;
 }
 
-/* Glass button sizes matching variant settings */
-.glass-button-text {
+/* Front Face: relative, determines width/height */
+.flip-button-front {
+    position: relative !important;
     padding: 12px 28px !important;
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+    transform: rotateX(0deg) !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    z-index: 2 !important;
+    box-shadow: 
+      inset 0 1px 1px rgba(255, 255, 255, 0.3),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.15) !important;
 }
-.size-sm .glass-button-text {
+
+/* Back Face: absolute, stretches to fit */
+.flip-button-back {
+    position: absolute !important;
+    inset: 0 !important;
+    background-color: #f4f4f5 !important;
+    color: #18181b !important;
+    transform: rotateX(180deg) !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    z-index: 1 !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 
+      inset 0 1px 1px rgba(255, 255, 255, 0.8),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Size modifications */
+.size-sm .flip-button-front {
     padding: 8px 20px !important;
     font-size: 13px !important;
 }
-.size-lg .glass-button-text {
+.size-sm .flip-button-back {
+    font-size: 13px !important;
+}
+
+.size-lg .flip-button-front {
     padding: 16px 36px !important;
     font-size: 16px !important;
 }
-
-/* Underlay Shadow for the Glow Effect */
-.glass-button-shadow {
-    position: absolute !important;
-    inset: 0 !important;
-    z-index: 1 !important;
-    border-radius: 9999px !important;
-    background: radial-gradient(circle, rgba(10, 132, 255, 0.25) 0%, rgba(10, 132, 255, 0) 70%) !important;
-    filter: blur(8px) !important;
-    transform: scale(0.9) translateY(4px) !important;
-    opacity: 0.6 !important;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    pointer-events: none !important;
+.size-lg .flip-button-back {
+    font-size: 16px !important;
 }
 
-/* Hover and Active states */
-.glass-button-wrap:hover {
-    transform: translateY(-2px) !important;
+/* Hover scales */
+.flip-button-wrap:hover .flip-button {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+.flip-button-wrap.flipped:hover .flip-button {
+    transform: rotateX(180deg) scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
-.glass-button-wrap:hover .glass-button {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border-color: rgba(255, 255, 255, 0.25) !important;
-    box-shadow: 
-      inset 0 1px 1px rgba(255, 255, 255, 0.4),
-      inset 0 -1px 1px rgba(0, 0, 0, 0.15),
-      0 8px 20px rgba(0, 0, 0, 0.08) !important;
+/* Active click scales */
+.flip-button-wrap:active .flip-button {
+    transform: scale(0.95) !important;
+}
+.flip-button-wrap.flipped:active .flip-button {
+    transform: rotateX(180deg) scale(0.95) !important;
 }
 
-.glass-button-wrap:hover .glass-button-shadow {
-    opacity: 0.95 !important;
-    transform: scale(1.1) translateY(6px) !important;
-    filter: blur(12px) !important;
-    background: radial-gradient(circle, rgba(10, 132, 255, 0.4) 0%, rgba(10, 132, 255, 0) 70%) !important;
+/* Hide newsletter section globally */
+.elementor-element-d3d5bff {
+    display: none !important;
 }
 
-.glass-button-wrap:active {
-    transform: translateY(1px) !important;
-}
 
-.glass-button-wrap:active .glass-button {
-    background: rgba(255, 255, 255, 0.05) !important;
-    box-shadow: 
-      inset 0 1px 2px rgba(0, 0, 0, 0.2),
-      0 2px 4px rgba(0, 0, 0, 0.05) !important;
-}
-
-.glass-button-wrap:active .glass-button-shadow {
-    opacity: 0.4 !important;
-    transform: scale(0.9) translateY(2px) !important;
-    filter: blur(4px) !important;
-}
 

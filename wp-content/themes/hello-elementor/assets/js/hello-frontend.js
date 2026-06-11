@@ -46,30 +46,94 @@
     document.addEventListener("DOMContentLoaded", function() {
         document.body.appendChild(pill);
         
-        // Convert static buttons to premium Glass buttons
-        const buttons = document.querySelectorAll('.elementor-button, .btn, .btn-primary, .btn-secondary, .cta-btn, .cta-btn-secondary');
+        // Remove Newsletter form from DOM
+        const newsletter = document.querySelector('.elementor-element-d3d5bff');
+        if (newsletter) {
+            newsletter.remove();
+        }
+        
+        // Convert static buttons to premium Flip buttons (including hero slide button)
+        const buttons = document.querySelectorAll('.elementor-button, .btn, .btn-primary, .btn-secondary, .cta-btn, .cta-btn-secondary, .bdt-slide-btn');
         buttons.forEach(btn => {
-            if (btn.classList.contains('glass-button') || btn.closest('.glass-button-wrap') || btn.closest('.elementor-widget-icon') || btn.classList.contains('elementor-icon')) return;
+            if (btn.classList.contains('flip-button') || btn.closest('.flip-button-wrap') || btn.closest('.elementor-widget-icon') || btn.classList.contains('elementor-icon')) return;
             
             const originalContent = btn.innerHTML;
-            
-            // Create wrapper
-            const wrapper = document.createElement('div');
-            wrapper.className = 'glass-button-wrap cursor-pointer rounded-full';
+            const originalText = btn.textContent ? btn.textContent.trim() : "";
             
             // Sizing classes mapping
-            if (btn.classList.contains('elementor-size-sm')) wrapper.classList.add('size-sm');
-            if (btn.classList.contains('elementor-size-lg')) wrapper.classList.add('size-lg');
+            let sizeClass = "";
+            if (btn.classList.contains('elementor-size-sm') || btn.classList.contains('btn-sm')) sizeClass = 'size-sm';
+            if (btn.classList.contains('elementor-size-lg') || btn.classList.contains('btn-lg')) sizeClass = 'size-lg';
+
+            // Determine the flipped text mapping based on original text
+            const textMapping = {
+                "Get a Quote": "Free Estimate",
+                "Read Full Article": "Open Post",
+                "Join": "Subscribe",
+                "Book a Free Consultation": "Book Now",
+                "Call our Expert Designers": "Dial (800)",
+                "Consult Today": "Let's Start",
+                "Submit": "Sending...",
+                "Cancel": "Submit",
+                "Back to Home": "Go Home",
+                "Download / Print PDF": "Print Now"
+            };
+
+            // Clean up text for lookup (case insensitive / trim spaces / normalize newlines)
+            let cleanedText = originalText.replace(/\s+/g, ' ').trim();
+            let mappedText = "Click Me"; // Fallback
+            
+            // Look for a close match in the keys
+            let matchFound = false;
+            for (const [key, val] of Object.entries(textMapping)) {
+                if (cleanedText.toLowerCase().includes(key.toLowerCase()) || key.toLowerCase().includes(cleanedText.toLowerCase())) {
+                    mappedText = val;
+                    matchFound = true;
+                    break;
+                }
+            }
+            if (!matchFound) {
+                if (cleanedText.length > 0) {
+                    mappedText = "Let's Go!";
+                } else {
+                    mappedText = "Learn More";
+                }
+            }
+
+            // Create wrapper
+            const wrapper = document.createElement('div');
+            wrapper.className = 'flip-button-wrap';
+            if (sizeClass) wrapper.classList.add(sizeClass);
             
             btn.parentNode.insertBefore(wrapper, btn);
             wrapper.appendChild(btn);
             
-            btn.classList.add('glass-button');
-            btn.innerHTML = `<span class="glass-button-text relative block select-none tracking-tighter">${originalContent}</span>`;
+            btn.classList.add('flip-button');
+            if (sizeClass) btn.classList.add(sizeClass);
             
-            const shadow = document.createElement('div');
-            shadow.className = 'glass-button-shadow rounded-full';
-            wrapper.appendChild(shadow);
+            btn.innerHTML = `
+                <span class="flip-button-front">${originalContent}</span>
+                <span class="flip-button-back">${mappedText}</span>
+            `;
+            
+            // Toggle state on click
+            wrapper.addEventListener('click', (e) => {
+                wrapper.classList.toggle('flipped');
+                
+                // If it is a link with a valid destination, delay navigation so they can see the flip animation
+                const href = btn.getAttribute('href');
+                const target = btn.getAttribute('target');
+                if (href && href !== '#' && !href.startsWith('javascript:')) {
+                    e.preventDefault();
+                    setTimeout(() => {
+                        if (target === '_blank') {
+                            window.open(href, '_blank');
+                        } else {
+                            window.location.href = href;
+                        }
+                    }, 500); // 500ms allows the flip rotation to show clearly
+                }
+            });
         });
     });
 })();
