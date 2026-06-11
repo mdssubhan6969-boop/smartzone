@@ -347,6 +347,7 @@
 			}
 		}
 	</style>
+<link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
 
@@ -447,7 +448,43 @@
 		</div>
 	</div>
 
+<!-- dynamicLinkFix -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Browse our services -> services.html
+    document.querySelectorAll("a").forEach(a => {
+        if (a.textContent.match(/Browse Our Services/i)) {
+            a.href = "services.html";
+            a.onclick = null; // Remove any broken elementor handlers
+        }
+    });
+
+    // 2. Book a Free Consultation -> contact.html
+    document.querySelectorAll("a").forEach(a => {
+        if (a.textContent.match(/Book a Free Consultation/i)) {
+            a.href = "contact.html";
+            a.onclick = null;
+        }
+    });
+
+    // 3. Call our Expert Designers -> contact.html
+    document.querySelectorAll("a").forEach(a => {
+        if (a.textContent.match(/Call our Expert Designers/i)) {
+            a.href = "contact.html";
+            a.onclick = null;
+        }
+    });
+});
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 

@@ -271,6 +271,13 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
     }
 </style>
 
+<link rel="icon" type="image/png" href="logo.png">
+    <style>
+    /* Emergency Off-Canvas Fix to force display */
+    .e-off-canvas[aria-hidden="false"] { opacity: 1 !important; visibility: visible !important; pointer-events: all !important; z-index: 9999999 !important; }
+    .e-off-canvas[aria-hidden="false"] .e-off-canvas__main { opacity: 1 !important; visibility: visible !important; transform: none !important; display: flex !important; animation: none !important; background-color: transparent !important; }
+    .e-off-canvas[aria-hidden="false"] .e-off-canvas__content { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; margin-left: auto !important; background-color: #f8fafc !important; pointer-events: all !important; }
+    </style>
 </head>
 <body class="home wp-singular page-template-default page page-id-151 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-151">
 
@@ -493,7 +500,7 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 						<ul class="elementor-icon-list-items">
 						<li class="elementor-icon-list-item">
 									<a href="learn.html#about">
-						<span class="elementor-icon-list-text">About us</span>
+						<a href="learn.html" style="text-decoration:none; color:inherit;"><span class="elementor-icon-list-text">About us</span></a>
 									</a>
 							</li>
 							<li class="elementor-icon-list-item">
@@ -521,7 +528,7 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 					</li>
 				<li class="e-n-menu-item">
 			<div id="e-n-menu-title-1337" class="e-n-menu-title">
-				<a class="e-n-menu-title-container e-focus e-link" href="index.html#contact">								<span class="e-n-menu-title-text">
+				<a class="e-n-menu-title-container e-focus e-link" href="contact.html">								<span class="e-n-menu-title-text">
 						Contact us					</span>
 				</a>							</div>
 					</li>
@@ -530,7 +537,7 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 	</nav>
 					</div>
 			<div class="elementor-element elementor-element-a05efc3 elementor-widget elementor-widget-button" data-id="a05efc3" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
-							<a class="elementor-button elementor-button-link elementor-size-sm" href="index.html#contact">
+							<a class="elementor-button elementor-button-link elementor-size-sm" href="contact.html">
 					<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Get a Quote</span>
 				</span>
@@ -608,7 +615,7 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 								</a>
 						</li>
 						<li class="elementor-icon-list-item">
-								<a href="index.html#contact">
+								<a href="contact.html">
 					<span class="elementor-icon-list-text"><span class="mmenu">Contact us</span></span>
 								</a>
 						</li>
@@ -749,7 +756,7 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
     justify-content: center;
     background: 
         linear-gradient(to bottom, rgba(5, 10, 25, 0.72) 0%, rgba(5, 10, 25, 0.55) 60%, rgba(5, 10, 25, 0.80) 100%),
-        url('images/img_40.jpg') center center / cover no-repeat;
+        url('images/img_60.jpg') center center / cover no-repeat;
     text-align: center;
     padding: 120px 24px 80px;
     box-sizing: border-box;
@@ -1689,63 +1696,10 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
         <h1>Our Story &amp; Vision</h1>
         <div class="learn-hero-divider"></div>
         <p>Where Design Meets Passion — crafting extraordinary spaces that celebrate UAE's rich cultural heritage while embracing the pinnacle of modern elegance.</p>
-        <a href="#ceo" class="learn-hero-scroll">
+        <a href="#story" class="learn-hero-scroll">
             <i class="fas fa-chevron-down"></i>
             Discover our journey
         </a>
-    </div>
-</section>
-
-<!-- ===================== CEO SECTION ===================== -->
-<section class="ceo-section" id="ceo">
-    <div class="ceo-grid">
-        <!-- LEFT: Photo -->
-        <div class="ceo-photo-col">
-            <div class="ceo-photo-frame">
-                <img src="images/ceo_shakir.png" alt="Shakir — Founder &amp; CEO of Smartzone Interior Design" />
-            </div>
-            <div class="ceo-experience-badge">
-                <span class="badge-num">15+</span>
-                <span class="badge-text">Years of Excellence</span>
-            </div>
-        </div>
-
-        <!-- RIGHT: Bio -->
-        <div class="ceo-content-col">
-            <div class="ceo-tag">
-                <i class="fas fa-star"></i>
-                Leadership &amp; Vision
-            </div>
-            <span class="ceo-heading-badge">Meet Our</span>
-            <h2 class="ceo-name">Shakir</h2>
-            <p class="ceo-title">Founder &amp; Chief Executive Officer</p>
-
-            <p class="ceo-bio">
-                Shakir's journey into the world of interior design began not as a career choice, but as an innate calling — a deep-seated passion for transforming raw spaces into living, breathing narratives. Born and raised with an appreciation for both traditional Arabic architecture and the sweeping modernism that defines the UAE's skyline, Shakir founded Smartzone Interior Design in 2010 with a singular mission: to create spaces that tell stories.
-            </p>
-            <p class="ceo-bio">
-                With over 15 years of hands-on experience spanning residential villas, luxury apartments, corporate headquarters, retail showrooms, and hospitality venues across Dubai, Abu Dhabi, and Sharjah, Shakir has cultivated an unmatched depth of knowledge in architectural planning, spatial design, and project execution. His academic grounding in architecture provided the technical foundation, while years of collaboration with master craftsmen across the region forged an intuitive understanding of materials, light, proportion, and cultural context.
-            </p>
-            <p class="ceo-bio">
-                Under his leadership, Smartzone Interior Design has completed over 200 landmark projects, earned international recognition, and built a reputation synonymous with trust, innovation, and breathtaking results. Shakir's design philosophy rests on a guiding belief: that every space should be a reflection of its inhabitant's aspirations — a perfect fusion of Eastern heritage and Western contemporary aesthetics. He remains personally involved in every major project, ensuring that each client receives not just a design, but an experience.
-            </p>
-
-            <blockquote class="ceo-quote-block">
-                <p class="ceo-quote-text">"Design is not merely about beauty — it is about creating an environment where people feel the fullness of who they are. The greatest spaces do not impress; they inspire."</p>
-                <cite class="ceo-quote-attribution">— Shakir, Founder &amp; CEO</cite>
-            </blockquote>
-
-            <div class="ceo-contact-row">
-                <a href="https://wa.me/971547787867" target="_blank" rel="noopener" class="ceo-whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i>
-                    WhatsApp Shakir
-                </a>
-                <div class="ceo-phone-label">
-                    <strong>+971 54 778 7867</strong><br>
-                    <span>Direct line for consultations</span>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -1901,59 +1855,6 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
     </div>
 </section>
 
-<!-- ===================== TEAM SECTION ===================== -->
-<section class="team-section" id="team">
-    <div class="learn-container">
-        <div class="team-header">
-            <span class="learn-section-badge">The People Behind the Design</span>
-            <h2 class="learn-section-title">Meet Our Team</h2>
-            <div class="section-divider centered"></div>
-            <p class="learn-section-subtitle" style="margin:0 auto;">Our multidisciplinary team of visionaries brings together decades of combined expertise in architecture, interior design, and project management.</p>
-        </div>
-
-        <div class="team-grid">
-            <!-- Creative Director -->
-            <div class="team-card">
-                <div class="team-photo-wrap">
-                    <img src="images/img_40.jpg" alt="Creative Director" />
-                    <div class="team-photo-overlay"></div>
-                </div>
-                <div class="team-info">
-                    <p class="team-role">Creative Director</p>
-                    <h3 class="team-name">Layla Al-Rashidi</h3>
-                    <p class="team-bio">With a Master's in Interior Architecture from Milan's Politecnico di Milano, Layla brings a European sensibility fused with deep understanding of Gulf aesthetics. She leads our creative vision and brand identity.</p>
-                </div>
-            </div>
-
-            <!-- Lead Architect -->
-            <div class="team-card">
-                <div class="team-photo-wrap">
-                    <img src="images/img_41.jpg" alt="Lead Architect" />
-                    <div class="team-photo-overlay"></div>
-                </div>
-                <div class="team-info">
-                    <p class="team-role">Lead Architect</p>
-                    <h3 class="team-name">Omar Khalil</h3>
-                    <p class="team-bio">A licensed architect with 12 years of experience across UAE and Europe, Omar specializes in structural innovation and spatial optimization. He ensures every design is as functional as it is beautiful.</p>
-                </div>
-            </div>
-
-            <!-- Project Manager -->
-            <div class="team-card">
-                <div class="team-photo-wrap">
-                    <img src="images/img_42.jpg" alt="Project Manager" />
-                    <div class="team-photo-overlay"></div>
-                </div>
-                <div class="team-info">
-                    <p class="team-role">Project Manager</p>
-                    <h3 class="team-name">Nadia Hassan</h3>
-                    <p class="team-bio">Nadia's meticulous project management ensures every Smartzone project is delivered on time and within budget. Her client communication skills and logistics expertise are the backbone of our seamless delivery.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ===================== CERTIFICATIONS SECTION ===================== -->
 <section class="cert-section" id="certifications">
     <div class="learn-container">
@@ -2035,7 +1936,7 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
         <h2 class="cta-title">Ready to Transform Your Space?</h2>
         <p class="cta-desc">Whether it's a dream villa in Dubai or a flagship commercial showroom, Smartzone Interior Design is your trusted partner for creating spaces that inspire. Let's bring your vision to life — together.</p>
         <div class="cta-buttons">
-            <a href="index.html#contact" class="cta-btn-primary">
+            <a href="contact.html" class="cta-btn-primary">
                 <i class="fas fa-envelope"></i>
                 Start a Conversation
             </a>
@@ -2078,6 +1979,30 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 											<a href="mailto:info@smartzoneuae.com">
  
 											<span class="elementor-icon-list-text"> info@smartzoneuae.com</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				
+				<div class="elementor-element elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://instagram.com/smartzone.ae" target="_blank">
+ 
+											<span class="elementor-icon-list-icon"><img src="insta icon.jpg" style="width:18px; height:18px; margin-right:8px; vertical-align:middle; object-fit:contain;" /></span>
+											<span class="elementor-icon-list-text"> @smartzone.ae</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				
+				<div class="elementor-element elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://tiktok.com/@smartzone.ae" target="_blank">
+ 
+											<span class="elementor-icon-list-icon"><img src="tiktok icon.png" style="width:18px; height:18px; margin-right:8px; vertical-align:middle; object-fit:contain;" /></span>
+											<span class="elementor-icon-list-text"> @smartzone.ae</span>
 											</a>
 									</li>
 						</ul>
@@ -2373,19 +2298,19 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 				<div class="elementor-element elementor-element-4fe7ed8 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4fe7ed8" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">About us</span>
+										<a href="learn.html" style="text-decoration:none; color:inherit;"><span class="elementor-icon-list-text">About us</span></a>
 									</li>
 								<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">Services</span>
+										<a href="services.html" style="text-decoration:none; color:inherit;"><span class="elementor-icon-list-text">Services</span></a>
 									</li>
 								<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">Blog</span>
+										<a href="blog.html" style="text-decoration:none; color:inherit;"><span class="elementor-icon-list-text">Blog</span></a>
 									</li>
 								<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">Projects</span>
+										<a href="projects.html" style="text-decoration:none; color:inherit;"><span class="elementor-icon-list-text">Projects</span></a>
 									</li>
 								<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">Contact us</span>
+										<a href="contact.html" style="text-decoration:none; color:inherit;"><span class="elementor-icon-list-text">Contact us</span></a>
 									</li>
 						</ul>
 						</div>
@@ -2406,9 +2331,10 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 						<svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-d0fbb50" target="_blank">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-d0fbb50" target="_blank" href="https://instagram.com/smartzone.ae" style="display:inline-flex; align-items:center; justify-content:center;">
 						<span class="elementor-screen-only">Instagram</span>
-						<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z" /></svg>					</a>
+						<img src="insta icon.jpg" style="width:18px; height:18px; object-fit:contain;" />
+					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-8c8203c" target="_blank">
@@ -2416,9 +2342,10 @@ a:where(:not(.wp-element-button)){text-decoration: underline;}
 						<svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.5-56.7-34.5 0-34.5 0z" /></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest elementor-repeater-item-b73c741" target="_blank">
-						<span class="elementor-screen-only">Pinterest</span>
-						<svg aria-hidden="true" class="e-font-icon-svg e-fab-pinterest" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg>					</a>
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-repeater-item-tiktok" target="_blank" href="https://tiktok.com/@smartzone.ae" style="display:inline-flex; align-items:center; justify-content:center;">
+						<span class="elementor-screen-only">TikTok</span>
+						<img src="tiktok icon.png" style="width:18px; height:18px; object-fit:contain;" />
+					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-3abce92" target="_blank">
@@ -2543,11 +2470,40 @@ var localize = {"ajaxurl":"https://datakoku.com/arthouseinteriordemo/wp-admin/ad
                     
                     const offCanvas = document.getElementById("off-canvas-" + targetId);
                     if (offCanvas) {
-                        if (action === "open") {
-                            offCanvas.setAttribute("aria-hidden", "false");
-                            offCanvas.removeAttribute("inert");
-                            document.body.classList.add("e-off-canvas__no-scroll");
-                        } else {
+                        if (action === "open" || actionMatch[1] === "open") {
+    let customMenu = document.getElementById("custom-mobile-menu");
+    if (!customMenu) {
+        customMenu = document.createElement("div");
+        customMenu.id = "custom-mobile-menu";
+        customMenu.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee; padding-bottom:1rem; margin-bottom:2rem;">
+            <h2 style="margin:0; font-family:'Roboto Slab', serif;">SmartZone Menu</h2>
+            <button id="close-mobile-menu" style="background:none; border:none; font-size:2.5rem; cursor:pointer; color:#333;">&times;</button>
+        </div>
+        <div style="display:flex; flex-direction:column; gap: 1.5rem;">
+            <a href="index.html" style="font-size:1.5rem; color:#333; text-decoration:none; font-family:'Roboto', sans-serif;">Home</a>
+            <a href="learn.html" style="font-size:1.5rem; color:#333; text-decoration:none; font-family:'Roboto', sans-serif;">About Us</a>
+            <a href="projects.html" style="font-size:1.5rem; color:#333; text-decoration:none; font-family:'Roboto', sans-serif;">Projects</a>
+            <a href="services.html" style="font-size:1.5rem; color:#333; text-decoration:none; font-family:'Roboto', sans-serif;">Services</a>
+            <a href="blog.html" style="font-size:1.5rem; color:#333; text-decoration:none; font-family:'Roboto', sans-serif;">Blog</a>
+            <a href="contact.html" style="font-size:1.5rem; color:#333; text-decoration:none; font-family:'Roboto', sans-serif;">Contact Us</a>
+        </div>
+        `;
+        Object.assign(customMenu.style, {
+            position: 'fixed', top: '0', left: '0', width: '100vw', height: '100vh',
+            backgroundColor: '#ffffff', zIndex: '9999999', display: 'flex', flexDirection: 'column',
+            padding: '2rem', boxSizing: 'border-box', opacity: '0', transition: 'opacity 0.3s ease-in-out'
+        });
+        document.body.appendChild(customMenu);
+        document.getElementById("close-mobile-menu").onclick = () => {
+            customMenu.style.opacity = '0';
+            setTimeout(() => { customMenu.style.display = 'none'; }, 300);
+        };
+    }
+    customMenu.style.display = 'flex';
+    setTimeout(() => { customMenu.style.opacity = '1'; }, 10);
+    return;
+} else {
                             offCanvas.setAttribute("aria-hidden", "true");
                             offCanvas.setAttribute("inert", "");
                             document.body.classList.remove("e-off-canvas__no-scroll");
@@ -2571,7 +2527,45 @@ var localize = {"ajaxurl":"https://datakoku.com/arthouseinteriordemo/wp-admin/ad
             }
         }
     }, true); document.addEventListener("click", function(e) { const anchor = e.target.closest("a"); if (!anchor) return; const href = anchor.getAttribute("href"); if (href && href !== "#" && !href.startsWith("javascript:") && !href.startsWith("#elementor-action")) { if (anchor.closest(".e-n-menu") || anchor.closest(".elementor-location-header") || anchor.closest(".mmenu") || anchor.classList.contains("mmenu")) { e.preventDefault(); e.stopPropagation(); window.location.href = href; } } }, true); })(); </script>
+<!-- dynamicLinkFix -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Browse our services -> services.html
+    document.querySelectorAll("a").forEach(a => {
+        if (a.textContent.match(/Browse Our Services/i)) {
+            a.href = "services.html";
+            a.onclick = null; // Remove any broken elementor handlers
+        }
+    });
+
+    // 2. Book a Free Consultation -> contact.html
+    document.querySelectorAll("a").forEach(a => {
+        if (a.textContent.match(/Book a Free Consultation/i)) {
+            a.href = "contact.html";
+            a.onclick = null;
+        }
+    });
+
+    // 3. Call our Expert Designers -> contact.html
+    document.querySelectorAll("a").forEach(a => {
+        if (a.textContent.match(/Call our Expert Designers/i)) {
+            a.href = "contact.html";
+            a.onclick = null;
+        }
+    });
+});
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
