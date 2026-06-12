@@ -449,6 +449,47 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel="icon" type="image/png" href="logo.png">
+
+<style id="font-fix-sitewide">
+    /* Force Font Awesome 5 Free */
+    @font-face {
+        font-family: 'Font Awesome 5 Free';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2) format("woff2"),
+             url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff) format("woff");
+    }
+    @font-face {
+        font-family: 'Font Awesome 5 Free';
+        font-style: normal;
+        font-weight: 900;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2) format("woff2"),
+             url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff) format("woff");
+    }
+    /* Force Font Awesome 5 Brands */
+    @font-face {
+        font-family: 'Font Awesome 5 Brands';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2) format("woff2"),
+             url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff) format("woff");
+    }
+    /* Force Elementor Icons (eicons) */
+    @font-face {
+        font-family: 'eicons';
+        src: url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.eot?5.10.0');
+        src: url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.eot?5.10.0#iefix') format('embedded-opentype'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.woff2?5.10.0') format('woff2'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.woff?5.10.0') format('woff'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.ttf?5.10.0') format('truetype'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.svg?5.10.0#eicon') format('svg');
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
 </head>
 <body class="home wp-singular page-template-default page page-id-projects wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6">
 
@@ -3554,6 +3595,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </body>
 </html>
+
 
 
 

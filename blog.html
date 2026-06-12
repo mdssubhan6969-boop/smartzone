@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -723,8 +723,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     /* ========== SIDEBAR ========== */
     .blog-sidebar {
-        position: sticky;
-        top: 100px;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -1172,6 +1170,47 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     .e-off-canvas[aria-hidden="false"] .e-off-canvas__main { opacity: 1 !important; visibility: visible !important; transform: none !important; display: flex !important; animation: none !important; background-color: transparent !important; }
     .e-off-canvas[aria-hidden="false"] .e-off-canvas__content { opacity: 1 !important; visibility: visible !important; transform: none !important; display: block !important; margin-left: auto !important; background-color: #f8fafc !important; pointer-events: all !important; }
     </style>
+
+<style id="font-fix-sitewide">
+    /* Force Font Awesome 5 Free */
+    @font-face {
+        font-family: 'Font Awesome 5 Free';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2) format("woff2"),
+             url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff) format("woff");
+    }
+    @font-face {
+        font-family: 'Font Awesome 5 Free';
+        font-style: normal;
+        font-weight: 900;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2) format("woff2"),
+             url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff) format("woff");
+    }
+    /* Force Font Awesome 5 Brands */
+    @font-face {
+        font-family: 'Font Awesome 5 Brands';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2) format("woff2"),
+             url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff) format("woff");
+    }
+    /* Force Elementor Icons (eicons) */
+    @font-face {
+        font-family: 'eicons';
+        src: url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.eot?5.10.0');
+        src: url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.eot?5.10.0#iefix') format('embedded-opentype'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.woff2?5.10.0') format('woff2'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.woff?5.10.0') format('woff'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.ttf?5.10.0') format('truetype'),
+             url('https://cdn.jsdelivr.net/npm/@elementor/icons@5.30.0/lib/eicons/fonts/eicons.svg?5.10.0#eicon') format('svg');
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
 </head>
 <body class="home wp-singular page-template-default page page-id-151 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-151">
 
@@ -1653,7 +1692,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         </div>
         <article class="featured-card" data-category="uae-design">
             <div class="featured-card-image">
-                <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_1_1781206574800.png" alt="Why Interior Design Matters More Than Ever in the UAE" loading="lazy">
+                <img src="images/article_1.png" alt="Why Interior Design Matters More Than Ever in the UAE" loading="lazy">
                 <div class="featured-image-overlay"></div>
             </div>
             <div class="featured-card-body">
@@ -1698,7 +1737,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 2: Trends -->
                 <article class="article-card" data-category="trends">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_2_1781206586028.png" alt="The Rise of Luxury Interior Design in Dubai: Trends Shaping 2025" loading="lazy">
+                        <img src="images/article_2.png" alt="The Rise of Luxury Interior Design in Dubai: Trends Shaping 2025" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge">Trends</span>
@@ -1720,7 +1759,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 3: Furniture -->
                 <article class="article-card" data-category="furniture">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_3_1781206597910.png" alt="How to Choose the Perfect Sofa for Your UAE Living Room" loading="lazy">
+                        <img src="images/article_3.png" alt="How to Choose the Perfect Sofa for Your UAE Living Room" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge">Furniture</span>
@@ -1742,7 +1781,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 4: Entertainment -->
                 <article class="article-card" data-category="entertainment">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_1_1781206574800.png" alt="Designing World-Class Entertainment Rooms" loading="lazy">
+                        <img src="images/article_1.png" alt="Designing World-Class Entertainment Rooms" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(255,100,50,0.09);color:#C04000;border-color:rgba(200,80,30,0.2);">Entertainment</span>
@@ -1764,7 +1803,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 5: Lifestyle -->
                 <article class="article-card" data-category="lifestyle">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_2_1781206586028.png" alt="Biophilic Design: Bringing Nature Into UAE Homes" loading="lazy">
+                        <img src="images/article_2.png" alt="Biophilic Design: Bringing Nature Into UAE Homes" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(30,160,80,0.09);color:#147A40;border-color:rgba(30,160,80,0.2);">Lifestyle</span>
@@ -1786,7 +1825,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 6: Furniture -->
                 <article class="article-card" data-category="furniture">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_3_1781206597910.png" alt="10 Chair Styles That Define Modern UAE Interiors" loading="lazy">
+                        <img src="images/article_3.png" alt="10 Chair Styles That Define Modern UAE Interiors" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge">Furniture</span>
@@ -1808,7 +1847,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 7: Commercial -->
                 <article class="article-card" data-category="commercial">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_1_1781206574800.png" alt="The Business Case for Office Interior Design in Abu Dhabi" loading="lazy">
+                        <img src="images/article_1.png" alt="The Business Case for Office Interior Design in Abu Dhabi" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(100,0,200,0.08);color:#5500BB;border-color:rgba(100,0,200,0.18);">Commercial</span>
@@ -1830,7 +1869,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 8: Materials -->
                 <article class="article-card" data-category="materials">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_2_1781206586028.png" alt="Marble, Gold & Glass: The UAE Design Palette Explained" loading="lazy">
+                        <img src="images/article_2.png" alt="Marble, Gold & Glass: The UAE Design Palette Explained" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(180,140,0,0.1);color:#8B6E00;border-color:rgba(180,140,0,0.22);">Materials</span>
@@ -1852,7 +1891,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 9: Process -->
                 <article class="article-card" data-category="process">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_3_1781206597910.png" alt="From Concept to Completion: Smartzone's Interior Design Process" loading="lazy">
+                        <img src="images/article_3.png" alt="From Concept to Completion: Smartzone's Interior Design Process" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(10,132,255,0.09);color:#0050CC;border-color:rgba(10,132,255,0.2);">Process</span>
@@ -1874,7 +1913,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 10: Technology -->
                 <article class="article-card" data-category="technology">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_1_1781206574800.png" alt="Smart Homes & Smart Design: Technology in UAE Interiors" loading="lazy">
+                        <img src="images/article_1.png" alt="Smart Homes & Smart Design: Technology in UAE Interiors" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(0,180,160,0.09);color:#007A6E;border-color:rgba(0,180,160,0.2);">Technology</span>
@@ -1896,7 +1935,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 11: Style -->
                 <article class="article-card" data-category="style">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_2_1781206586028.png" alt="Minimalism vs. Maximalism: What UAE Homeowners Prefer" loading="lazy">
+                        <img src="images/article_2.png" alt="Minimalism vs. Maximalism: What UAE Homeowners Prefer" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(200,0,100,0.08);color:#A00055;border-color:rgba(200,0,100,0.18);">Style</span>
@@ -1918,7 +1957,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <!-- ARTICLE 12: Culture -->
                 <article class="article-card" data-category="culture">
                     <div class="article-card-image">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_3_1781206597910.png" alt="Cultural Heritage in Modern UAE Interior Design" loading="lazy">
+                        <img src="images/article_3.png" alt="Cultural Heritage in Modern UAE Interior Design" loading="lazy">
                         <div class="article-card-image-overlay"></div>
                         <div class="article-card-category">
                             <span class="category-badge" style="background:rgba(140,60,0,0.09);color:#7A3300;border-color:rgba(140,60,0,0.2);">Culture</span>
@@ -1962,29 +2001,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         <!-- ======= SIDEBAR ======= -->
         <aside class="blog-sidebar">
 
-            <!-- About Widget -->
-            <div class="sidebar-widget">
-                <img src="logo.png" alt="Smartzone Interior Design" class="about-widget-logo">
-                <p class="about-widget-text">Smartzone Interior Design is the UAE's premier studio for residential and commercial interiors. With over 15 years of excellence, we craft spaces that inspire, endure, and define.</p>
-                <div class="about-widget-stats">
-                    <div class="about-stat">
-                        <span class="about-stat-number">500+</span>
-                        <span class="about-stat-label">Projects Completed</span>
-                    </div>
-                    <div class="about-stat">
-                        <span class="about-stat-number">15+</span>
-                        <span class="about-stat-label">Years Experience</span>
-                    </div>
-                    <div class="about-stat">
-                        <span class="about-stat-number">7</span>
-                        <span class="about-stat-label">Design Awards</span>
-                    </div>
-                    <div class="about-stat">
-                        <span class="about-stat-number">UAE</span>
-                        <span class="about-stat-label">Based Studio</span>
-                    </div>
-                </div>
-            </div>
+            <!-- About Widget Removed -->
 
             <!-- Popular Tags -->
             <div class="sidebar-widget">
@@ -2022,7 +2039,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </h3>
                 <a href="#" class="recent-post-item">
                     <div class="recent-post-thumb">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_1_1781206574800.png" alt="Why Interior Design Matters">
+                        <img src="images/article_1.png" alt="Why Interior Design Matters">
                     </div>
                     <div class="recent-post-info">
                         <div class="recent-post-cat">UAE Design</div>
@@ -2032,7 +2049,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </a>
                 <a href="#" class="recent-post-item">
                     <div class="recent-post-thumb">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_2_1781206586028.png" alt="Luxury Interior Design Dubai">
+                        <img src="images/article_2.png" alt="Luxury Interior Design Dubai">
                     </div>
                     <div class="recent-post-info">
                         <div class="recent-post-cat">Trends</div>
@@ -2042,7 +2059,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </a>
                 <a href="#" class="recent-post-item">
                     <div class="recent-post-thumb">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_3_1781206597910.png" alt="Office Interior Design Abu Dhabi">
+                        <img src="images/article_3.png" alt="Office Interior Design Abu Dhabi">
                     </div>
                     <div class="recent-post-info">
                         <div class="recent-post-cat">Commercial</div>
@@ -2052,7 +2069,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </a>
                 <a href="#" class="recent-post-item">
                     <div class="recent-post-thumb">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_1_1781206574800.png" alt="Biophilic Design UAE">
+                        <img src="images/article_1.png" alt="Biophilic Design UAE">
                     </div>
                     <div class="recent-post-info">
                         <div class="recent-post-cat">Lifestyle</div>
@@ -2062,7 +2079,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </a>
                 <a href="#" class="recent-post-item">
                     <div class="recent-post-thumb">
-                        <img src="C:/Users/sky/.gemini/antigravity/brain/78d97388-991f-44ce-ae5a-853c4647a362/article_ai_2_1781206586028.png" alt="Cultural Heritage UAE Design">
+                        <img src="images/article_2.png" alt="Cultural Heritage UAE Design">
                     </div>
                     <div class="recent-post-info">
                         <div class="recent-post-cat">Culture</div>
@@ -2822,6 +2839,8 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </body>
 </html>
+
+
 
 
 
